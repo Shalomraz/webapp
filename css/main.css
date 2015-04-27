@@ -259,48 +259,56 @@ nav {
 	position: relative;
 }
 
+/* Tabs 1'st icon */
 .tabs > ul > li > a {
 	background: url(../img/icons/square-expand.png) no-repeat;
 	background-position: 30% 1em; 
 	background-color: #444;
 }
 
+/* Tabs 1'st icon hover */
 .tabs > ul > li > a:hover {
 	background: url(../img/icons/square-expand-grey.png) no-repeat;
 	background-position: 30% 1em; 
 	background-color: #444;
 }
 
+/* Tabs 2'nd icon */
 .tabs > ul > li:nth-child(2) > a {
 	background: url(../img/icons/star.png) no-repeat;
 	background-position: 32% 1em; 
 	background-color: #444;
 }
 
+/* Tabs 2'nd icon hover */
 .tabs > ul > li:nth-child(2) > a:hover {
 	background: url(../img/icons/star-grey.png) no-repeat;
 	background-position: 32% 1em; 
 	background-color: #E6E6E6;
 }
 
+/* Tabs 3'rd icon */
 .tabs > ul > li:nth-child(3) > a {
 	background: url(../img/icons/folder.png) no-repeat;
 	background-position: 24% 1em; 
 	background-color: #444;
 }
 
+/* Tabs 3'rd icon hover */
 .tabs > ul > li:nth-child(3) > a:hover {
 	background: url(../img/icons/folder-grey.png) no-repeat;
 	background-position: 24% 1em; 
 	background-color: #E6E6E6;
 }
 
+/* Tabs 4'th icon */
 .tabs > ul > li:nth-child(4) > a {
 	background: url(../img/icons/doc.png) no-repeat;
 	background-position: 28% 1em; 
 	background-color: #444;
 }
 
+/* Tabs 4'th icon hover */
 .tabs > ul > li:nth-child(4) > a:hover {
 	background: url(../img/icons/doc-grey.png) no-repeat;
 	background-position: 28% 1em; 
