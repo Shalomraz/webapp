@@ -319,7 +319,7 @@ nav {
 .tabs div {
 	clear: both;
 	display: block;
-	height: 300px;
+	height: 18.75em;
 	display: none;
 	background-color: #E6E6E6;
 }
@@ -334,7 +334,8 @@ nav {
 }
 
 .tabs div:target {
-	display:block;
+	display: block;
+	height: 25em;
 }
 
 	
