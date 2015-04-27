@@ -248,6 +248,7 @@ nav {
 
 /* Tabs link decoration */
 .tabs > ul li a {
+	background-color: #444;
 	display: block;
 	width: 100%;
 	text-decoration: none;
@@ -256,7 +257,16 @@ nav {
 	text-align: center;
 	color: white;
 	position: relative;
+}
+
+.tabs > ul > li > a {
 	background: url(../img/icons/square-expand.png) no-repeat;
+	background-position: 30% 1em; 
+	background-color: #444;
+}
+
+.tabs > ul > li > a:hover {
+	background: url(../img/icons/square-expand-grey.png) no-repeat;
 	background-position: 30% 1em; 
 	background-color: #444;
 }
@@ -287,13 +297,13 @@ nav {
 
 .tabs > ul > li:nth-child(4) > a {
 	background: url(../img/icons/doc.png) no-repeat;
-	background-position: 24% 1em; 
+	background-position: 28% 1em; 
 	background-color: #444;
 }
 
 .tabs > ul > li:nth-child(4) > a:hover {
 	background: url(../img/icons/doc-grey.png) no-repeat;
-	background-position: 24% 1em; 
+	background-position: 28% 1em; 
 	background-color: #E6E6E6;
 }
 
@@ -311,9 +321,7 @@ nav {
 .tabs > ul li a:hover,
 .tabs > ul li a:focus
 {
-	color:black;
-	background: url(../img/icons/square-expand-grey.png) no-repeat;
-	background-position: 30% 1em;
+	color: black;
 	background-color: #E6E6E6;
 }
 
