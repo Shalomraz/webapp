@@ -11,5 +11,4 @@ options = {
 
 function init() {
 	UTILS.ajax('data/config.json',options);
-	console.log('ok')
 }
