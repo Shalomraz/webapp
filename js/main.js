@@ -14,6 +14,7 @@ options = {
 };
 
 function init() {
-	UTILS.ajax('data/config.json',options);
+    UTILS.ajax('data/config.json', options);
+
 }
 
