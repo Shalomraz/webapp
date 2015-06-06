@@ -18,11 +18,26 @@ module.exports = function (grunt) {
 				src: 'js/main.js',
 				dest: 'js/main.min.js'
 			}
+		},
+
+		watch: {
+			scripts: {
+				files: ['css/test.scss'],
+				tasks: ['default']
+			},
+			css: {
+				files: 'css/test.sass',
+			   	tasks: ['sass'],
+			   	options: {
+			   		livereload: true
+			   	}
+			}
 		}
 	});
 
 	// Default task(s).
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.registerTask('default', ['sass', 'uglify']);
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.registerTask('default', ['sass', 'uglify', 'watch']);
 };
