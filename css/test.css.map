@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,IAAK;EACJ,gBAAgB,EAHO,IAAI",
+"mappings": "AAEA,IAAK;EACJ,gBAAgB,EAHO,SAAS",
 "sources": ["test.scss"],
 "names": [],
 "file": "test.css"

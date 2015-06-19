@@ -2,6 +2,15 @@ module.exports = function (grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+		connect: {
+		  server: {
+		    options: {
+		      livereload: true,
+		      port: 8080,
+		      keepalive: false
+		    }
+		  }
+		},
 		sass: {
 			dist: {
 				files: {                         
@@ -9,7 +18,6 @@ module.exports = function (grunt) {
 		       }
 	   		}
 		},
-
 		uglify: {
 			options: {
 				banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy‐mm‐dd") %> */\n'
@@ -19,15 +27,14 @@ module.exports = function (grunt) {
 				dest: 'js/main.min.js'
 			}
 		},
-
 		watch: {
 			scripts: {
 				files: ['css/test.scss'],
 				tasks: ['default']
 			},
 			css: {
-				files: 'css/test.sass',
-			   	tasks: ['sass'],
+				files: 'css/test.css',
+			   	tasks: ['css'],
 			   	options: {
 			   		livereload: true
 			   	}
@@ -36,8 +43,11 @@ module.exports = function (grunt) {
 	});
 
 	// Default task(s).
+	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-http-server');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default', ['sass', 'uglify', 'watch']);
+	grunt.registerTask('default');
+	grunt.registerTask('server', ['sass', 'uglify', 'watch']);
 };
